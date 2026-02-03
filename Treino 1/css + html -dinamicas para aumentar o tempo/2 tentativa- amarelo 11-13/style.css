@@ -1,0 +1,69 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.linha{
+    height:33% ;
+    width:100% ;
+}
+.bet{
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+}
+.q1{
+height: 80px;
+width: 80px;
+background-color: blue;
+}
+.q2{
+height: 80px;
+width: 80px;
+background-color: yellow;
+}
+
+.ret1{
+height: 100%;
+width: 50%;
+background-color: blue;
+}
+
+.ret2{
+height: 100%;
+width: 50%;
+background-color: yellow;
+}
+.a{
+    align-items: center;
+}
+.b{
+    justify-content: end;
+    align-items: center;
+}
+.metade{
+    height: 50%;
+    width: 100%;
+}
+.ha{
+    justify-content: center;
+}
+.ja{
+    justify-content: center;
+    align-items: end;
+}
+
+.rg{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+.hub{
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.g{
+    align-items: center;
+}
