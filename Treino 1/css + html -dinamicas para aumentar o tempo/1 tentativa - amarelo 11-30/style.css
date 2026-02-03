@@ -1,0 +1,63 @@
+ .container{
+    height: 100vh;
+    width: 100vw;
+ }
+ .linha{
+ height: 33%;
+ width: 100%;
+ }
+.metade{
+    height: 50%;
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.bet{
+    justify-content: space-between;
+}
+ .a{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+ }
+ .b{
+  height: 100%;
+    width: 50%;
+    background-color: yellow;
+ }
+
+ .qz{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+ }
+  .qa{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+ }
+ .am{
+    align-items: center;
+ }
+ .bm{
+    justify-content: end;
+    align-items: center;
+ }
+ .lm{
+    justify-content: center;
+ }
+ .ln{
+    justify-content: center;
+    align-items: end;
+ }
+
+ .rent{
+    height:100% ;
+    width:100% ;
+    background-color: blue;
+ }
+ .j{
+    justify-content: space-between;
+    align-items: center;
+ }

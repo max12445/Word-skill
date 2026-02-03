@@ -1,0 +1,92 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.linha{
+    height: 33%;
+    width: 100%;
+}
+
+.metade{
+    height: 50%;
+    width: 100%;
+}
+.p3{
+    height: 100%;
+    width: 33%;
+}
+.qg{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.qp{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+.flex{
+    display: flex;
+}
+
+.bet{
+    justify-content: space-between;
+}
+
+.colu{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.qe{
+    justify-content: center;
+    align-items: center;
+}
+.q4{
+    justify-content: center;
+    align-items: end;
+}
+.q5{
+    justify-content: center;
+}
+.q6{
+    justify-content: end;
+}
+.q7{
+    justify-content: end;
+    align-items: end;
+}
+.q8{
+    justify-content: end;
+}
+.q9{
+    align-items: end;
+}
+.q10{
+align-items: end;
+}
+.q11{
+    align-items: center;
+    justify-content: space-between;
+}
+.q12{
+    jus
+}
+
+.t{
+  align-items: center;
+}
+.b{
+   justify-content: space-between;
+   align-items: center; 
+   flex-direction: column;
+}
+.c{
+    justify-content: end;
+    align-items: center;
+}
