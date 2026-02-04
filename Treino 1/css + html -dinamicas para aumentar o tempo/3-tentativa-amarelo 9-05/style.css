@@ -1,0 +1,61 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.linha{
+     height: 33.333%;
+    width: 100%;
+}
+.inteiro{
+     height: 100%;
+    width: 100%;
+background-color: blue;
+}
+.flex{
+    display: flex;
+}
+.bet{
+    justify-content: space-around;
+}
+.meio1{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+}
+.meio2{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+}
+
+.qpy{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+}
+.qpb{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+}
+.z{
+    align-items: center;
+}
+.o{
+    align-items: center;
+}
+.p{
+    justify-content: end;
+    align-items: center;
+}
+.metade{
+    height: 50%;
+    width: 100%;
+}
+.f{
+    justify-content: center;
+}
+.e{
+    justify-content: center;
+    align-items: end;
+}
