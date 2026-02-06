@@ -1,0 +1,133 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.telaLogin {
+    height: 1200px;
+    width: 1000px;
+    border-radius: 35px;
+    background-color: rgb(246, 247, 250);
+}
+
+.flex {
+    display: flex;
+}
+
+.centro {
+    justify-content: center;
+    align-items: center;
+}
+
+.meio {
+    justify-content: center;
+}
+
+.meio1 {
+    align-items: center;
+}
+.around{
+    justify-content: space-around;
+}
+.roxo {
+    color: rgb(rgb(137, 46, 160));
+}
+
+.fonT {
+    font-size: 40px;
+    color: purple;
+    font-weight: bold;
+}
+
+.colum {
+    flex-direction: column;
+}
+
+.marginTop {
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+.bet{
+    justify-content: space-between;
+}
+.espasamento {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entrar {
+    height: 180px;
+    width: 700px;
+    border-radius: 15px;
+    background-color: purple;
+}
+
+.botao {
+    width: 100%;
+    height: 100%;
+    display: flex;/* centraliza o texto */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;/* tira sublinhado */
+    color: white;/* cor da letra */
+    font-size: 40px;
+    font-weight: bold;
+    background: transparent;/* usa o fundo da div */
+    border: none;
+    cursor: pointer;
+}
+
+/* CADASTRO */
+
+.telaCadastro{
+    height: 700px;
+    width: 1350px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 18px;
+}
+.font{
+    font-size: 28px;
+    color: purple;
+    font-weight: bold;   
+    margin-bottom: 0%; 
+}
+.cadastrar {
+    height: 100px;
+    width: 1165px;
+    border-radius: 15px;
+    margin-top: 2%;
+    background-color: purple;
+}
+
+/* PRINCIPAL */
+
+.container2{
+    height: 200vh;
+    width: 98vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.com{
+    height: 6%;
+}
+.metade{
+    height: 100%;
+    width: 60%;
+}
+.metade1{
+    height: 100%;
+    width: 40%;
+}
+.bola{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: black;
+    border-right: 50px;
+
+}
+.b{
+    height: 88vh;
+    width: 100%;
+}
