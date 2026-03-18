@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Player</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex w-screen h-screen justify-center items-center">
-    <div class=" w-[320px] h-[480px] bg-gray-200 rounded-md flex flex-col">
 
-        <!-- X/fechar -->
-        <div class="h-1/16 w-full  flex  justify-end">
-            <a href="objetivo.html" class="flex justify-end h-8 w-8 ">
-                <img src="img/exit.png" alt="">
+<body id="body" class="flex w-screen h-screen justify-center items-center">
+
+    <div id="container" class="w-[320px] h-[480px] bg-gray-200 rounded-md flex flex-col">
+
+        <!-- fechar -->
+        <div class="flex justify-end">
+            <a href="objetivo.html" class="h-8 w-8">
+                <img src="img/exit.png">
             </a>
         </div>
 
-        <!-- interface da musica -->
-        <div class="h-full w-full  flex justify-center items-center">
-            <div class="h-50 w-60 mt-4 rounded-md border-3"></div>
-        </div>
-
-        <div class="h-5/5 w-full  flex flex-col items-center">
-
-
-            <!-- TEMPO DA MUSICA (TEM QUE SER MECHIDO) -->
-            <div class="h-4 w-60 mt-5 mb-5 border-black border-3 rounded-sm">
-                
-            </div>
-            <!--  PLAY -->
-            <div>
-                <div class="w-25 h-25 border-3 rounded-full flex justify-center items-center">
-                    <img src="img/play.png" alt="">
-                </div>
+        <!-- imagem / bob -->
+        <div class="flex justify-center items-center">
+            <div class="h-[200px] w-[250px] border-3 flex rounded-md justify-center items-center">
+                <img id="imgMusica" class="h-20w-20w-20">
             </div>
         </div>
-       <div class="flex justify-center font-medium">
-        OBJETIVO
-       </div>
-       <!-- NOME DO OBJETIVO  -->
+
+        <!-- tempos -->
+        <div class="flex justify-between w-60 mx-auto text-sm mt-3">
+            <span id="tempoAtual">0:00</span>
+            <span id="tempoRestante">1:00</span>
+        </div>
+
+        <!-- barra -->
+        <div class="h-4 w-60 mx-auto border-black border-3 rounded-sm mt-2">
+            <div id="barra" class="h-full w-0 bg-black"></div>
+        </div>
+
+        <!-- botão -->
+        <div class="flex justify-center mt-5">
+            <div class="w-20 h-20 border-3 rounded-full flex justify-center items-center">
+                <img id="btnPlay" src="img/play.png">
+            </div>
+        </div>
+
+        <!-- objetivo -->
+        <div class="text-center mt-4 font-medium">OBJETIVO</div>
+
         <div class="flex justify-center">
-            <div class="h-10 w-50 rounded-md border-3 flex mb-4 ">
-                
+            <div id="nomeObjetivo" class="h-10 w-50 rounded-md border-3 flex items-center justify-center mb-4">
             </div>
         </div>
-        
+
+        <!-- audio -->
+        <audio id="audio"></audio>
+
     </div>
-    <script src="img/musica.js"></script>
+
+    <script src="js/musica.js"></script>
 </body>
+
 </html>

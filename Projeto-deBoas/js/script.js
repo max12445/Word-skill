@@ -68,3 +68,21 @@ if(posicaoY <= -50){
 dormir.style.transform = `translate(${posicaoX}px, ${posicaoY}px)`
 }
 setInterval(meiaLua, 20)
+
+// pegar os botões
+const btnRelaxar = document.getElementById("contadorFicarSusa");
+const btnFoco = document.getElementById("contadorOlhaFoca");
+const btnDormir = document.getElementById("DormirDeBoas");
+
+// salvar objetivo ao clicar
+btnRelaxar.addEventListener("click", () => {
+    localStorage.setItem("objetivo", "relaxar");
+});
+
+btnFoco.addEventListener("click", () => {
+    localStorage.setItem("objetivo", "foco");
+});
+
+btnDormir.addEventListener("click", () => {
+    localStorage.setItem("objetivo", "dormir");
+});
