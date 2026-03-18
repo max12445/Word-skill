@@ -17,11 +17,11 @@ function configurarObjetivo() {
     if (objetivo === "relaxar") {
         container.style.backgroundColor = "#60A5FA";
         nomeObjetivo.textContent = "Ficar Sussa";
-    } 
+    }
     else if (objetivo === "foco") {
         container.style.backgroundColor = "#F87171";
         nomeObjetivo.textContent = "Olha a Foca";
-    } 
+    }
     else if (objetivo === "dormir") {
         container.style.backgroundColor = "#A78BFA";
         nomeObjetivo.textContent = "Dormir de Boas";
@@ -68,10 +68,13 @@ function atualizarTempo() {
     const restante = DURACAO - tempo;
     tempoRestante.textContent = `0:${restante.toString().padStart(2, "0")}`;
 
-      if (audio.currentTime >= 60) {
+    if (audio.currentTime >= 60) {
         audio.currentTime = 0;
         barra.style.width = "0%";
-        //localstoreg
+        //localSotreg
+        let totalMeditacoes = Number(localStorage.getItem("meditacoes")) || 0;
+        totalMeditacoes++;
+        localStorage.setItem("meditacoes", totalMeditacoes);
     }
 
     // terminou
@@ -87,10 +90,10 @@ audio.addEventListener("timeupdate", atualizarTempo);
 // ================= SALVAR ESTATÍSTICAS =================
 function finalizarMeditacao() {
 
-    // sessões
-    let totalMeditacoes = Number(localStorage.getItem("meditacoes")) || 0;
-    totalMeditacoes++;
-    localStorage.setItem("meditacoes", totalMeditacoes);
+     // sessões
+    // let totalMeditacoes = Number(localStorage.getItem("meditacoes")) || 0;
+    // totalMeditacoes++;
+    // localStorage.setItem("meditacoes", totalMeditacoes);
 
     // tempo total
     let tempoTotal = Number(localStorage.getItem("tempoTotal")) || 0;
