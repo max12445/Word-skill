@@ -86,3 +86,18 @@ btnFoco.addEventListener("click", () => {
 btnDormir.addEventListener("click", () => {
     localStorage.setItem("objetivo", "dormir");
 });
+
+// Função genérica para incrementar no localStorage
+function incrementarContador(chave) {
+    // Pega o valor atual ou inicia em 0
+    let valorAtual = Number(localStorage.getItem(chave)) || 0;
+    // Incrementa
+    valorAtual++;
+    // Salva de volta no localStorage
+    localStorage.setItem(chave, valorAtual);
+}
+
+// Adiciona os listeners para cada botão
+btnRelaxar.addEventListener("click", () => incrementarContador("contadorRelaxar"));
+btnFoco.addEventListener("click", () => incrementarContador("contadorFoco"));
+btnDormir.addEventListener("click", () => incrementarContador("contadorDormir"));

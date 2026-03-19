@@ -172,3 +172,15 @@ else if (objetivo === "dormir") {
         imgMusica.style.transform = `translate(${x}px, ${y}px)`;
     }, 20);
 }
+
+audio.addEventListener("timeupdate", () => {
+    const segundosAtual = Math.floor(audio.currentTime);
+
+    // Soma ao tempo total apenas se passou 1 segundo
+    if (segundosAtual > ultimoTempo) {
+        tempoTotal += segundosAtual - ultimoTempo;
+        ultimoTempo = segundosAtual;
+        localStorage.setItem("tempoTotal", tempoTotal);
+        exibirTempoAssistido();
+    }
+});
