@@ -35,5 +35,4 @@ if (boas > maior) {
     maior = boas;
     nome = "Dormir de Boas";
 }
-
 document.getElementById("ObjetivoMaisRealizado").textContent = nome;

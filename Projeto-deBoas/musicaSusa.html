@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,62 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/">
 </head>
+
 <body class="flex w-screen h-screen justify-center items-center">
 
 
-<div class="w-[320px] h-[480px] bg-blue-400 rounded-md flex flex-col items-center">
+    <div class="w-[320px] h-[480px] bg-blue-400 rounded-md flex flex-col items-center">
 
-    <!-- Botão de voltar -->
-    <div class="w-full flex justify-end p-2">
-        <a href="objetivo.html" class="w-8 h-8">
-            <img src="img/exit.png" alt="">
-        </a>
-    </div>
-
-    <!-- Capa da música -->
-    <div class="flex justify-center items-center mt-2">
-        <div class="h-40 w-40 rounded-md border-2 border-black justify-center items-center flex">
-              <img id="cego" src="img/cego.png" alt="" class=" relative transition-all duration-300" >
+        <!-- Botão de voltar -->
+        <div class="w-full flex justify-end p-2">
+            <a href="objetivo.html" class="w-8 h-8">
+                <img src="img/exit.png" alt="">
+            </a>
         </div>
-    </div>
 
-    <!-- Barra de progresso -->
-     <div class="justify-around flex ">
-        <div class="flex bottom-4 h-10 w-10 items-end" id="tempoAumentando">0:00</div>
-        <div class="flex bottom-4 h-10 w-10"></div>
-        <div class="flex bottom-4 h-10 w-10 "></div>
-        <div class="flex bottom-4 h-10 w-10  items-end justify-end" id="tempoAbaixando">1:00</div>
-     </div>
-    <div class="h-4 w-60 mt-5 mb-5 border-black border-2 rounded-sm">
-        <div id="barra" class="h-full bg-blue-500 w-0"></div>
-    </div>
-
-    <!-- Botão Play/Pause -->
-    <div id="btnPlay" class="w-20 h-20 border-2 rounded-full flex justify-center items-center cursor-pointer">
-        <img src="img/play.png" id="iconePlay" alt="" class="">
-    </div>
-
-    <!-- Texto objetivo -->
-    <div class="mt-4 font-medium">
-        OBJETIVO
-    </div>
-
-    <!-- Nome do objetivo -->
-    <div class="flex justify-center mt-2">
-        <div class="h-10 w-40 rounded-md border-2 flex justify-center items-center">
-            <span>Ficar Susa</span>
+        <!-- Capa da música -->
+        <div class="flex justify-center items-center mt-2">
+            <div class="h-40 w-40 rounded-md border-2 border-black justify-center items-center flex">
+                <img id="cego" src="img/cego.png" alt="" class=" relative transition-all duration-300">
+            </div>
         </div>
+
+        <!-- Barra de progresso -->
+        <div class="justify-around flex ">
+            <div class="flex bottom-4 h-10 w-10 items-end" id="tempoAumentando">0:00</div>
+            <div class="flex bottom-4 h-10 w-10"></div>
+            <div class="flex bottom-4 h-10 w-10 "></div>
+            <div class="flex bottom-4 h-10 w-10  items-end justify-end" id="tempoAbaixando">1:00</div>
+        </div>
+        <div class="h-4 w-60 mt-5 mb-5 border-black border-2 rounded-sm">
+            <div id="barra" class="h-full bg-blue-500 w-0"></div>
+        </div>
+
+        <!-- Botão Play/Pause -->
+        <div id="btnPlay" class="w-20 h-20 border-2 rounded-full flex justify-center items-center cursor-pointer">
+            <img src="img/play.png" id="iconePlay" alt="" class="">
+        </div>
+
+        <!-- Texto objetivo -->
+        <div class="mt-4 font-medium">
+            OBJETIVO
+        </div>
+
+        <!-- Nome do objetivo -->
+        <div class="flex justify-center mt-2">
+            <div class="h-10 w-40 rounded-md border-2 flex justify-center items-center">
+                <span>Ficar Susa</span>
+            </div>
+        </div>
+
+        <!-- Áudio -->
+        <audio id="musica" src="audio/meditacao.mp3"></audio>
+
     </div>
 
-    <!-- Áudio -->
-    <audio id="musica" src="audio/meditacao.mp3"></audio>
-
-</div>
-
-<script src="js/musica.js"></script>
+    <script src="js/musica.js"></script>
 
 
 </body>
+
 </html>
