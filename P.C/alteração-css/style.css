@@ -1,0 +1,8 @@
+.animacao {
+    transition: transform 1.3s ease;
+}
+
+.animacao:hover {
+    transform: scale(1.2);
+    background-color: #60a5fa;
+}

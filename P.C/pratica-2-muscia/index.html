@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App de Meditação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg w-80 text-center">
+        <!-- Título -->
+        <h1 class="text-xl font-bold mb-4">--Música--</h1>
+
+        <!-- Tempo -->
+        <div class="flex justify-between text-sm mb-2">
+            <span id="tempoAumentando">0:00</span>
+            <span id="tempoAbaixando">1:00</span>
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="w-full bg-gray-700 rounded-full h-3 mb-4">
+            <div id="barra" class="bg-green-400 h-3 rounded-full w-0 transition-all"></div>
+        </div>
+
+        <!-- Botão -->
+        <button id="btnPlay" class="bg-red-400 p-4 rounded-full transition">
+            <img id="iconePlay" src="img/play.png" class="w-6 h-6">
+        </button>
+
+        <!-- Áudio -->
+        <audio id="musica" src="audio/meditacao.mp3"></audio>
+
+        <!-- Estatísticas -->
+        <div class="mt-4 text-sm text-gray-300">
+            <p>Total de meditações: <span id="totalMeditacoes">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
